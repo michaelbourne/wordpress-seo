@@ -7,4 +7,5 @@ module.exports = {
 		"./packages/js/src/**/*.js",
 		"./src/integrations/settings-integration.php",
 	],
+	safelist: process.env.NODE_ENV === "development" ? [ { pattern: /.*/ } ] : [],
 };
