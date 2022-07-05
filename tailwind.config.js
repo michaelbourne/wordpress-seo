@@ -6,4 +6,5 @@ module.exports = {
 		"./packages/ui-library/src/**/!(stories).js",
 		"./packages/js/src/**/*.js",
 	],
+	safelist: process.env.NODE_ENV === "development" ? [ { pattern: /.*/ } ] : [],
 };
